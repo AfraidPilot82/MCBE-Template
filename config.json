@@ -1,0 +1,37 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/v1.4.json",
+	"author": "APCraft",
+	"name": "",
+	"packs": {
+		"behaviorPack": "./packs/BP",
+		"resourcePack": "./packs/RP"
+	},
+	"regolith": {
+		"dataPath": "./packs/data",
+		"filterDefinitions": {
+			"gametests": {
+				"url": "github.com/Bedrock-OSS/regolith-filters",
+				"version": "1.7.3"
+			},
+			"json_cleaner": {
+				"url": "github.com/Bedrock-OSS/regolith-filters",
+				"version": "2.0.1"
+			},
+			"manifest_cleaner": {
+				"url": "github.com/AfraidPilot82/regolith-filters",
+				"version": "1.0.0"
+			}
+		},
+		"formatVersion": "1.4.0",
+		"profiles": {
+			"default": {
+				"export": {
+					"build": "standard",
+					"readOnly": false,
+					"target": "development"
+				},
+				"filters": []
+			}
+		}
+	}
+}
